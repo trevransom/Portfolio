@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+
+@font-face {
+font-family: Dense;
+src: url('fonts/Sansation_Light.otf');
+}
+
+@font-face {
+font-family: Type;
+src: url('fonts/EuropeUnderground_light.ttf');
+}
+
+body {
+	font-family: "Helvetica";
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 120%;
+  z-index: -1;
+	
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#blog_padding {
+	position: absolute;
+	border: 1px solid black;
+	padding: 5em;
+	width: 21%;
+	left: 34%;
+	top: 22%;
+	background-color: rgba(0,0,0,.2);
+	text-align: center;
+}
+
+.blog_post {
+	/*width: 40em;*/
+	/*background: #B15553;*/
+	/*background: #EFDFBB; /* off white*/
+	background: white;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	position: relative;
+	min-width: 150px;
+	/*top: 50em;*/
+	top: 58em;
+	height: 22em;
+	padding-top: 25px;
+	/*overflow: auto;*/
+	/*left: 50%;*/
+
+}
+
+#blog_submit_form {
+	border-style: none;
+	position: relative;
+	right: 50%;
+	height: 10em;
+	width: 27em;
+	resize: none;
+}
+
+#blog_submit_header {
+	font-family: Dense;
+	color: white;
+	font-size: 2em;
+	font-weight: 100;
+	letter-spacing: .25em;
+	position: fixed;
+	top: 22%;
+	left: 41%;
+}
+
+#blue_back {
+    /*background: rgba(21,177,237,0.5);*/
+    /*background: #B15553;*/
+    /*background: #E0E0E0;*/
+    background: black;
+    width: 54%;
+    height: 25em;
+    position: absolute;
+    min-width: 50%;
+    top: 17%;
+    left: 23%;
+}
+
+#button_center_form {
+	position: relative;
+	margin-top: 3px;
+	left: 50%;
+}
+
+#center {
+	position: absolute;
+	border: 1px solid black;
+	padding: 5em;
+	width: 30%;
+	text-align: center;
+	left: 35%;
+	top: 25%;
+	background-color: rgba(0,0,0,.2);
+}
+
+#check {
+	position: absolute;
+	left: 18%;
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+#chevron_left {
+	font-weight: 100;
+	font-size: 5em;
+	position: relative;
+	bottom: .5em;
+	left: 10%;
+
+}
+
+#chevron_right {
+	font-weight: 100;
+	font-size: 5em;
+	position: relative;
+	bottom: .5em;
+	left: 80%;
+}
+
+#chevron_right_first_post {
+	font-weight: 100;
+	font-size: 5em;
+	position: relative;
+	bottom: .5em;
+	left: 82.9%;
+}
+
+#chevron_left:hover, #chevron_right:hover, #chevron_right_first_post:hover{
+	color: #15B1ED;
+	cursor: pointer;
+}
+
+#current_post {
+	position: absolute;
+	top: 6em;
+	left: 42%;
+}
+
+#decrement {
+	position: relative;
+	color: #15B1ED;
+	left: 5em;
+	top: 90%;
+	cursor: pointer;
+
+}
+
+#increment {
+	position: relative;
+	color: #15B1ED;
+	left: 42em;
+	bottom: 50%;
+	width: 100px;
+	cursor: pointer;
+}
+
+#decrement:hover {
+	text-decoration: underline;
+}
+
+#increment:hover {
+	text-decoration: underline;
+}
+
+
+#nav {
+	padding-top: 10px;
+	color: black;
+	position: relative;
+	bottom: 4em;
+	/*position: absolute;*/
+	/*width: 100%;*/
+}
+
+
+#navbar li{
+	
+	display: inline;
+	position: relative;
+	list-style-type: none;
+	float: right;
+	
+	/*left: 25em;*/
+	/*padding: 1em;*/
+	font-family: Dense;
+	font-size: 1.5em;
+	bottom: 5px;
+}
+
+#navbar li a{
+	text-decoration: none;
+	color: black;
+	letter-spacing: .25em;
+	color: #211B20;
+	padding: 1em;
+	
+}
+
+#navbar li a:hover{
+	/*text-decoration: underline;*/
+	width: 90%;
+	/*color: rgba(255,246,90, .7);*/
+	color: white;
+}
+
+#navbar_gradient {
+    background: #15B1ED;
+    width: 100%;
+    height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#soundcloud_player {
+	display: none;
+	position: relative;
+	top: 10em;
+	left: 25%;
+}
+
+#submit {
+	position: absolute;
+	left: 50%;
+}
+
+#symbol {
+	color: #211B20;
+}
+
+#symbol:hover {
+	/*color: blue;*/
+	color: #211B20;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#post_container {
+	position: relative;
+	bottom: 0;
+	width: 50%;
+	left: 25%;
+	height: 18.25em;
+	overflow: auto;
+}
+
+#post_container::-webkit-scrollbar { 
+    display: none; 
+}
