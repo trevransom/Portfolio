@@ -253,7 +253,7 @@ body {
 	width: 50%;
 	left: 25%;
 	height: 18.25em;
-	/*overflow: auto;*/
+	overflow: auto;
 }
 
 #post_container::-webkit-scrollbar { 
