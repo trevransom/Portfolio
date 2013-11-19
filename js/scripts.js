@@ -12,23 +12,23 @@ $(window).load(function() {
   $("#soundcloud_player").show();
 });
 
-// function adjustStyle(width) {
-//     width = parseInt(width);
-//     if (width < 500) {
-//         $("#size-stylesheet").attr("href", "css/narrow.css");
-//     } else if ((width >= 500) && (width < 900)) {
-//         $("#size-stylesheet").attr("href", "css/medium.css");
-//     } else {
-//        $("#size-stylesheet").attr("href", "css/wide.css"); 
-//     }
-// }
+function adjustStyle(width) {
+    width = parseInt(width);
+    if (width < 500) {
+        $("#size-stylesheet").attr("href", "/Portfolio/css/narrow.css");
+    } else if ((width >= 500) && (width < 900)) {
+        $("#size-stylesheet").attr("href", "/Portfolio/css/medium.css");
+    } else {
+       $("#size-stylesheet").attr("href", "/Portfolio/css/wide.css"); 
+    }
+}
 
-// $(function() {
-//     adjustStyle($(this).width());
-//     $(window).resize(function() {
-//         adjustStyle($(this).width());
-//     });
-// });
+$(function() {
+    adjustStyle($(this).width());
+    $(window).resize(function() {
+        adjustStyle($(this).width());
+    });
+});
 
 $( "#plus" ).click(function() {
   $( ".settings" ).fadeToggle( "medium" );

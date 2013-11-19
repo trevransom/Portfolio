@@ -312,3 +312,9 @@ body {
 #post_container::-webkit-scrollbar { 
     display: none; 
 }
+
+#things img{
+	width: 29em;
+	height: 20em;
+
+}
