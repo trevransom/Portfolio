@@ -23,14 +23,14 @@ function init() {
 		
 	});
 
-// 	$( ".thing a" ).hover(
-// 	  function() {
-// 	    $( this ).addClass( "things_overlay" );
-// 	  }, 
-// 	  function() {
-// 	    $( this ).removeClass( "things_overlay" );
-// 	  }
-// );
+	// $( ".thing img" ).hover(
+	//   function() {
+	//     $( this ).addClass( "overlay" );
+	//   }, 
+	//   function() {
+	//     $( this ).removeClass( "overlay" );
+	//   }
+	// );
 }
 
 

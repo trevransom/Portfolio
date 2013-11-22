@@ -4,7 +4,8 @@ $(window).scroll(function(e){
 
 function parallax(){
   var scrolled = $(window).scrollTop();
-  $('#bg').css('top', -(scrolled*0.4)+'px');
+  $('.bg').css('top', -(scrolled*0.4)+'px');
+  // $('.album_cover_image').css('top', -(scrolled*0.4)+'px');
 }
 
 $(window).load(function() {

@@ -9,8 +9,13 @@ include "header.php";
 	<body>
 
 		<div id="things">
-			<!-- <div class="things_overlay"></div> -->
-			<div class="thing"><a class="things_overlay" href="/Portfolio/posts/2013/11/laguna"><img  src="img/laguna_cover.jpg"  alt="me"></a></div>
+			<div class="thing">
+				<a href="/Portfolio/2013/11/laguna"><img  src="img/laguna_cover.jpg"  alt="me">
+					<div class="overlay">
+						<p>Is this proper?</p>
+					</div>
+				</a>
+			</div>
 			<div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
 			<div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
 			<div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
