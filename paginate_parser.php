@@ -15,16 +15,19 @@ if(isset($_POST['postNum'])){
 	// This sets the range of rows to query for the chosen $pn
 	$limit = 'LIMIT ' .($pn - 1) * $rpp .',' .$rpp;
 	// This is your query again, it is for grabbing just one page worth of rows by applying $limit
-	$query = "SELECT post FROM blog_posts WHERE id=$postNum ORDER BY id DESC";
+	$query = "SELECT title, post FROM blog_posts WHERE id=$postNum ORDER BY id DESC";
 	$result = mysql_query($query);
 	$dataString = '';
 	while($row = mysql_fetch_array($result)){
+		$title = $row["title"];
 		$post = $row["post"];
+		$dataString .= $title.'|'.$post.'||';
 	}
 	// Close your database connection
     mysql_close($connection);
 	// Echo the results back to Ajax
-	echo $post;
+	// echo $title, $post;
+	echo $dataString;
 	exit();
 }
 ?>

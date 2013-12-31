@@ -12,10 +12,19 @@ body {
 	font-family: "Helvetica";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /**** Isotope Filtering ****/
 
 .isotope-item {
   z-index: 2;
+}
+
+#thing .isotope-item:hover { 
+	z-index: 10; 
 }
 
 .isotope-hidden.isotope-item {
@@ -62,7 +71,44 @@ body {
           transition-duration: 0s;
 }
 
-#bg {
+.album_cover_image {
+	width: 100%;
+}
+
+.album_desc_container {
+	/*background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 1) 10%);*/
+	background: white;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	position: relative;
+	/*left: 0.5em;*/
+	width: 100%;
+	min-width: 150px;
+	top: 44em;
+	height: auto;
+	/*padding-top: 25px;*/
+}
+
+.album_desc_content {
+	position: relative;
+	padding: 1em 4em;
+	/*left: 0;*/
+}
+
+.album_desc_title {
+	position: relative;
+}
+
+.album_object {
+	position: relative;
+	left: 25%;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	width: 50%;
+}
+
+.bg {
   position: fixed; 
   top: 0; 
   left: 0; 
@@ -72,7 +118,6 @@ body {
   /* Preserve aspect ratio */
   min-width: 100%;
   min-height: 100%;
-
 }
 
 #blog_padding {
@@ -88,30 +133,30 @@ body {
 
 .blog_post {
 	/*width: 40em;*/
-	background: #B15553;
-	/*background: #EFDFBB; /* off white*/
+	/*background: #B15553;*/
+	/*background: rgba(239, 223, 187, 1);*/
+
 	/*background: white;*/
+	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
 	font-family: sans-serif;
 	font-size: 1em;
 	font-weight: 100;
 	position: absolute;
-	/*min-width: 150px;*/
-	width: 100%;
-	/*top: 50em;*/
-	top: 58em;
-	height: 22em;
-	padding-top: 25px;
-	/*overflow: auto;*/
 	left: 0;
-
+	width: 100%;
+	min-width: 150px;
+	top: 58em;
+	height: 34em;
+	padding-top: 25px;
 }
 
 #blog_submit_form {
 	border-style: none;
 	position: relative;
-	right: 50%;
+	left: 25%;
+	top: 25%;
 	height: 10em;
-	width: 27em;
+	width: 50%;
 	resize: none;
 }
 
@@ -120,13 +165,16 @@ body {
 	color: white;
 	font-size: 2em;
 	font-weight: 100;
-	letter-spacing: .25em;
-	position: fixed;
-	top: 22%;
-	left: 41%;
+	letter-spacing: .2em;
+	position: relative;
+	text-align: center;
+	top: 4em;
+	z-index: 2;
+	/*left: 50%;
+	/*width: 40%;*/
 }
 
-#blue_back {
+#blog_submit_background {
     /*background: rgba(21,177,237,0.5);*/
     /*background: #B15553;*/
     /*background: #E0E0E0;*/
@@ -142,7 +190,9 @@ body {
 #button_center_form {
 	position: relative;
 	margin-top: 3px;
-	left: 50%;
+	top: 30%;
+	/*text-align: center;*/
+	right: 3em;
 }
 
 #center {
@@ -151,12 +201,12 @@ body {
 	padding: 5em;
 	width: 30%;
 	text-align: center;
-	left: 15%;
+	left: 30%;
 	top: 25%;
 	background-color: rgba(0,0,0,.2);
 }
 
-#check {
+#check {	
 	position: absolute;
 	left: 18%;
 	margin-bottom: 1em;
@@ -193,58 +243,49 @@ body {
 	cursor: pointer;
 }
 
+#color_black {
+	background: black;
+}
+
+#color_nav_bar {
+	background: #15B1ED;
+}
+
 #current_post {
 	position: absolute;
 	top: 6em;
 	left: 42%;
 }
 
-#decrement {
+#minus {
+	display: none;
 	position: relative;
-	color: #15B1ED;
-	left: 5em;
-	top: 90%;
-	cursor: pointer;
-
-}
-
-#increment {
-	position: relative;
-	color: #15B1ED;
-	left: 42em;
-	bottom: 50%;
-	width: 100px;
+	top: .07em;
+	right: .45em;
 	cursor: pointer;
 }
 
-#decrement:hover {
-	text-decoration: underline;
-}
-
-#increment:hover {
-	text-decoration: underline;
+#minus:hover {
+	color: white;
 }
 
 
 #nav {
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 	color: black;
 	position: relative;
-	bottom: 4em;
-	/*position: absolute;*/
-	/*width: 100%;*/
+	bottom: 2em;
+	/*padding: 1em;*/
 }
 
 
 #navbar li{
-	
-	display: inline;
 	position: relative;
+	display: inline;
 	list-style-type: none;
 	float: right;
+	padding-top: .7em;
 	
-	/*left: 25em;*/
-	/*padding: 1em;*/
 	font-family: Dense;
 	font-size: 1.5em;
 	bottom: 5px;
@@ -257,6 +298,11 @@ body {
 	color: #211B20;
 	padding: 1em;
 	
+}
+
+#navbar > li:nth-child(2) {
+	padding-right: 0;
+	margin-right: 0;
 }
 
 #navbar li a:hover{
@@ -273,20 +319,197 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 6;
 }
+
+#container {
+	position: relative;
+	/*left: 0;*/
+	top: 2em;
+	border: 2px solid;
+	height: auto;
+	background: white;
+}
+
+#container ul {
+	position: relative;
+	/*padding: 0 3em 0;*/
+	padding-left: 3.5em;
+	/*left: 1.9em;*/
+}
+
+.photo {
+  width: 200px;
+  /*margin: 1px;*/
+  padding: 10px;
+  /*float: left;*/
+}
+
+.photo.double {
+  width: 480px;
+}
+
+.photo.large {
+  width: 640px;
+  z-index: 3;
+}
+
+.photo.large .small-image,
+.photo .big-image { display: none; }
+
+
+/*.photo .small-image,
+.photo.large .big-image { display: block; }*/
+
+.photo img {
+  display: block;
+  width: 100%;
+}
+
+.photo .loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: hsla( 0, 0%, 100%, 0.7 );
+}
+
+.photo .loading span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.photo .loading img {
+  width: auto;
+  position: absolute;
+  left: -16px;
+  top: -16px;
+}
+
+#plus {
+	position: relative;
+	top: .07em;
+	right: .45em;
+	cursor: pointer;
+}
+
+#plus:hover {
+	color: white;
+}
+
+#post_container {
+	position: relative;
+	/*background: white;*/
+	width: 50%;
+	left: 25%;
+	overflow: auto;
+	top: 2em;
+	height: 26.25em;
+
+}
+
+#post_container img {
+	width: 100%;
+	height: auto;
+}
+
+#post_container::-webkit-scrollbar { 
+    /*display: none; */
+}
+
+#blog_post_content {
+	position: relative;
+	top: 2em;
+}
+
+#blog_post_title {
+	position: relative;
+	/*left: 2em;*/
+}
+
+.overlay {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    margin: 2.8em;
+    width: 80%;
+    height: 30%;
+    /*background: gray;*/
+    /*background: #bac6cc;*/
+    background: rgba(186,198,204,.9);
+    /*background: #15B1ED*/
+    /*background: #8A8272;*/
+    /*background-image: -webkit-linear-gradient(left, rgba(21,177,237, .9) 0%, rgba(186,198,204, 1) 80%);*/
+    opacity: 1;
+}
+
+.overlay_border_left {
+	position: relative;
+	border-top:2px solid black; 
+	width:50%; 
+	left:4em;
+}
+
+.overlay_border_right {
+	position: relative;
+	border-top:2px solid black; 
+	width:50%; 
+	left:4em;
+}
+
+.overlay_text {
+	font-family: Dense;
+	font-size: 1.5em;
+	position: relative;
+	color: black;
+	text-align: center;
+	/*top: 10%;*/
+	margin: .5em 0;
+}
+
+.settings {
+	display: none;
+	position: absolute;
+	background: #15B1ED;
+	font-size: .75em;
+	z-index: 2;
+	top: 3em;
+	left: 88%;
+	height: 10em;
+	width: 180px;
+	float: none;
+}
+
+.settings ul {
+	display: block;
+}
+
+.settings ul li {
+	top: 1em;
+	padding-top: .5em;
+	padding-left: 0;
+	float: right;
+}
+
 
 #soundcloud_player {
 	display: none;
-	position: absolute;
-	top: 10em;
-	left: 0%;
-	width: 100%;
+	position: relative;
+	top: 25em;
+	/*left: 25%;*/
 }
 
-#submit {
-	position: absolute;
-	left: 50%;
+.sounds_album_cover {
+	position: relative;
+	max-width: 20%;
+	min-width: 10%;
+	top: 4em;
+	left: 25%;
+	padding: 2em;
 }
 
 #symbol {
@@ -300,21 +523,78 @@ body {
 	cursor: pointer;
 }
 
-#post_container {
+.tab {
 	position: relative;
-	bottom: 0;
-	/*width: 50%;*/
-	/*left: 25%;*/
-	height: 18.25em;
-	overflow: auto;
+	left: 1em;
 }
 
-#post_container::-webkit-scrollbar { 
-    display: none; 
+#set_covers {
+	position: relative;
+	display: inline-block;
+	/*right: 1em;*/
+	/*right: .25em;*/
+	top: 3em;
+	/*margin-top: 0px;*/
+
+	/*width: 100%;*/
+	/*height: 5em;*/
+}
+
+#set_covers img{
+	z-index: 1;
+	width: 30em;
+
+	/*height: 20em;*/
+
+
+}
+
+.set_photo {
+	/*position: absolute;
+	float: left;*/
+	width: 30em;
+
+}
+
+/*.thing:hover .overlay {
+    opacity: 1;
+}*/
+
+#things {
+    position: relative;
+    top: 3em;
+    /*width: 100%;*/
 }
 
 #things img{
-	width: 29em;
-	height: 20em;
+    float: left;
+    z-index: 1;
+    /*max-width: 29.8em;*/
+    /*max-width: 100%;*/
+    /*width: 29.88em;*/
+    /*width: 33.15%;*/
+    border: .1em solid black;
+    margin: 0;
+    padding: 0;
+}
 
+.thing {
+	display: inline;
+	max-width: 100%;
+	float: left;
+	/*position: relative;*/
+}
+
+#title_submit_form {
+	border-style: none;
+	position: relative;
+	left: 25%;
+	top: 25%;
+	height: 2em;
+	width: 50%;
+	resize: none;
+}
+
+#white {
+	background: white;
 }

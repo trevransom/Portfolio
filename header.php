@@ -6,11 +6,8 @@ include "process_login_form.php";
 	<html>
 		<head>
 			<title>Trev | <?php echo $title ?></title>
-			<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-			<!-- <link rel="stylesheet" type="text/css" href="index.css"></link>	 -->
 			<link rel="stylesheet" type="text/css" href="/Portfolio/css/wide.css" />
 			<link id="size-stylesheet" rel="stylesheet" type="text/css" href="/Portfolio/css/narrow.css" />
-			<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"></link> -->
 			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="/Portfolio/js/jquery.isotope.min.js"></script>
@@ -51,7 +48,7 @@ include "process_login_form.php";
 				</ul>
 			</div>
 
-			<img class="bg" src="/Portfolio/paris.jpg">
+			<img class="bg" src="/Portfolio/rainier.jpg">
 		</body>
 
 <?

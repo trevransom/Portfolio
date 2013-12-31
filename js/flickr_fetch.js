@@ -7,16 +7,10 @@
         }, options);
         
         function view_image(event) {
-          // var $container = $('.album_desc_container'),
-          //     $photos = $container.find('.photo'),
-          //     $loadingIndicator = $('<div class="loading"><span><img src="http://i.imgur.com/IE7iw.gif" /></span></div>');
 
           // trigger Isotope after images have loaded
           $container.imagesLoaded( function(){
             $container.isotope({
-              // masonry: {
-              //   columnWidth: 200
-              // }
             });
           });
         }

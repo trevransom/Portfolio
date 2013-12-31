@@ -16,14 +16,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
 /**** Isotope Filtering ****/
 
 .isotope-item {
   z-index: 2;
 }
 
-.isotope-item:hover { z-index: 10; }
+#thing .isotope-item:hover { 
+	z-index: 10; 
+}
 
 .isotope-hidden.isotope-item {
   pointer-events: none;
@@ -74,6 +75,7 @@ body {
 }
 
 .album_desc_container {
+	display: none;
 	/*background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 1) 10%);*/
 	background: white;
 	font-family: sans-serif;
@@ -83,21 +85,19 @@ body {
 	/*left: 0.5em;*/
 	width: 100%;
 	min-width: 150px;
-	top: 45em;
+	top: 44em;
 	height: auto;
 	/*padding-top: 25px;*/
 }
 
 .album_desc_content {
 	position: relative;
-	padding: 1em;
+	padding: 1em 4em;
 	/*left: 0;*/
 }
 
 .album_desc_title {
 	position: relative;
-	padding: .5em 0 0 .5em;
-	margin: 0;
 }
 
 .album_object {
@@ -138,7 +138,7 @@ body {
 
 	/*background: white;*/
 	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
-	font-family: sans-serif;
+	font-family: helvetica;
 	font-size: 1em;
 	font-weight: 100;
 	position: absolute;
@@ -146,7 +146,7 @@ body {
 	width: 100%;
 	min-width: 150px;
 	top: 58em;
-	height: 34em;
+	height: 44em;
 	padding-top: 25px;
 }
 
@@ -243,10 +243,39 @@ body {
 	cursor: pointer;
 }
 
+#color_black {
+	background: black;
+}
+
+#color_nav_bar {
+	background: #15B1ED;
+}
+
 #current_post {
 	position: absolute;
 	top: 6em;
 	left: 42%;
+}
+
+#loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	/*left: 45%;
+	top: 50%;*/
+	z-index: 999;
+}
+
+#loading_icon {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
 }
 
 #minus {
@@ -330,21 +359,6 @@ body {
 	/*left: 1.9em;*/
 }
 
-.overlay {
-	position: absolute;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: white;
-	opacity: 0;
-}
-
-.thing:hover .overlay {
-	opacity: .5;
-}
-
 .photo {
   width: 200px;
   /*margin: 1px;*/
@@ -410,21 +424,85 @@ body {
 #post_container {
 	position: relative;
 	/*background: white;*/
-	width: 50%;
+	width: 70%;
 	left: 25%;
 	overflow: auto;
 	top: 2em;
-	height: 26.25em;
+	height: 36.25em;
 
 }
 
 #post_container img {
-	width: 100%;
+	position: relative;
+	width: 80%;
+	/*padding: 0 2em;*/
 	height: auto;
 }
 
 #post_container::-webkit-scrollbar { 
-    /*display: none; */
+    display: none; 
+}
+
+#blog_post_content {
+	position: relative;
+
+	padding-right: 10em;
+	top: 3em;
+}
+
+#blog_post_title {
+	font-family: Dense;
+	font-size: 4em;
+	position: relative;
+	float: left;
+	color: white;
+	background-color: black;
+}
+
+#blog_post_title:hover {
+	color: black;
+	background-color: transparent;
+}
+
+.overlay {
+    position: relative;
+    z-index: 3;
+    top: 2em;
+    margin-bottom: 2em;
+    margin: 0 2em;
+    left: 0;
+    max-width: 28em;
+    height: 12em;
+    
+    background: rgba(186,198,204,.9);
+    opacity: 0;
+}
+
+.overlay_border_left {
+	position: relative;
+	border-top:2px solid black; 
+	max-width:50%;
+	left: 25%;
+}
+
+.overlay_border_right {
+	position: relative;
+	border-top:2px solid black; 
+	max-width:50%;
+	left: 25%;
+}
+
+.overlay_text {
+	font-family: Dense;
+	font-size: 1.5em;
+	position: absolute;
+	color: black;
+	text-align: center;
+	width: 100%;
+	/*left: 20%;*/
+	bottom: 30%;
+	padding-right: 1em;
+	/*margin: 1em 1em;*/
 }
 
 .settings {
@@ -451,12 +529,70 @@ body {
 	float: right;
 }
 
+.sound_title {
+	font-family: sans-serif;
+	color: black;
+	letter-spacing: .45em;
+	text-align: center;
+}
+
+#sounds {
+	float: left;
+}
 
 #soundcloud_player {
+	position: relative;
+	padding: 2em;
+	border: 1px solid black;
+	-webkit-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	-moz-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+}
+
+
+#stream {
 	display: none;
 	position: relative;
-	top: 10em;
-	left: 25%;
+	left: 70%;
+	max-width: 45%;
+}
+
+.sounds_album_cover {
+	position: relative;
+	max-width: 50%;
+	min-width: 200px;
+	padding: 5em 2em 2em 2em;
+	border: 1px solid black;
+	-webkit-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	-moz-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+}
+
+#sounds_album_cover_position {
+	position: relative;
+	top: 9em;
+	left: 10%;
+	max-width: 40%;
+}
+
+.sounds_album_cover_title {
+	position: relative;
+	font-family: sans-serif;
+	color: black;
+	letter-spacing: .45em;
+	z-index: 3;
+	width: 120px;
+	top: 3em;
+	left: 7%;
+}
+
+.sounds_album_cover_title:hover {
+	color: white;
+	background-color: black;
+}
+
+a:link {
+	text-decoration: none;
 }
 
 #symbol {
@@ -475,35 +611,100 @@ body {
 	left: 1em;
 }
 
-#things {
+#set_covers {
 	position: relative;
+	display: inline-block;
 	/*right: 1em;*/
-	right: .25em;
-	top: 5em;
-	margin-top: 0px;
+	/*right: .25em;*/
+	top: 3em;
+	/*margin-top: 0px;*/
 
 	/*width: 100%;*/
 	/*height: 5em;*/
 }
 
-#things img{
+#set_covers img{
 	z-index: 1;
 	width: 30em;
-	height: 20em;
 
+	/*height: 20em;*/
+}
+
+.set_photo {
+	/*position: absolute;
+	float: left;*/
+	width: 30em;
+
+}
+
+.thing:hover .overlay {
+    opacity: 1;
+}
+
+#things {
+    position: relative;
+    top: 3em;
+    /*width: 100%;*/
+}
+
+#things img{
+    float: left;
+    z-index: 1;
+    /*max-width: 29.8em;*/
+    max-width: 100%;
+    /*width: 29.88em;*/
+    /*width: 33.15%;*/
+    border: .1em solid black;
+    margin: 0;
+    padding: 0;
 }
 
 .thing {
-	/*z-index: 999;*/
+	display: inline;
+	max-width: 33.33%;
+	float: left;
+	/*position: relative;*/
 }
-
-
 #title_submit_form {
 	border-style: none;
 	position: relative;
 	left: 25%;
 	top: 25%;
-	height: 1em;
+	height: 2em;
 	width: 50%;
 	resize: none;
+}
+
+#black {
+	background: black;
+}
+
+.scrolling_options {
+	list-style-type: none;
+	padding: 2em 6em 2em 2em;
+	position: fixed;
+	z-index: 9;
+	top: 50%;
+	right: 0;
+	width: 4em;
+	background-color: rgba(255, 255, 255, .8);
+	line-height: 2em;
+	/*list-style-image:url('http://3.bp.blogspot.com/-aPuDCwZje08/Tgc6dm_blWI/AAAAAAAAEjk/peo_2GbQQVo/s1600/circle-bullet-point-image.png');*/
+}
+
+.scrolling_options li a {
+	color: black;
+	font-family: Dense;
+	font-size: 2em;
+	letter-spacing: .3em;
+	/*border-bottom: 1px solid blue;*/
+	text-decoration: none;
+}
+
+.scrolling_options li a:hover {
+	border-bottom: 2px solid #15B1ED;
+}
+
+.scrolling_options li a.selected { 
+	border-bottom: 2px dashed #15B1ED;
 }

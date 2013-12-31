@@ -10,9 +10,8 @@ include "../../header.php";
 		<div id='loading'>
 		    <img id='loading_icon' src='../../img/load.gif' />
 		 </div> 
-		<img class="bg" src="http://farm4.staticflickr.com/3790/10931658483_e5a1f1c94e_o.jpg">
+		<img class="bg" src="http://farm6.staticflickr.com/5490/11180209884_800f8e956e_o.jpg">
 		
-
 		<div class="album_desc_container">
 			
 			<div class="album_desc_content">
@@ -29,10 +28,9 @@ include "../../header.php";
 
 		<script>
 			$(document).on('ready', function(){
-		      $('div.album_desc_container').flickr({ photoset_id: '72157637815342213'});
+		      $('div.album_desc_container').flickr({ photoset_id: '72157638296857045'});
 		    });
 		</script>
-		
 
 	</body>
 </html>
