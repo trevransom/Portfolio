@@ -103,8 +103,21 @@ mysql_close($connection);
 
 
 		<ul class="scrolling_options">
-			<li ><a class="selected" href="#top">Cover</a></li>
-			<li><a href="#post_container">Contents</a></li>
+			<li>
+				<a href="#top">
+					<div><i class="fa fa-circle-o"></i></div>
+					<div><p class="scroll_options_title">Cover</p></div>
+				</a>
+				
+			</li>
+			<br>
+			<li>
+				<a href="#post_container">
+					<div><i class="fa fa-circle-o"></i></div>
+					<div><p class="scroll_options_title">Blog</p></div>
+				</a>
+				
+			</li>
 		</ul>
 
 		<div class="blog_post">

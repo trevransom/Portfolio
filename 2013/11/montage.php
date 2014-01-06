@@ -8,8 +8,10 @@ include "../../header.php";
 	
 	<body>
 		<div id='loading'>
-		    <img id='loading_icon' src='../../img/load.gif' />
-		 </div> 
+		    <div class="loading_icon_bkrd">
+		    	<i id='loading_icon' class="fa fa-spinner fa-spin fa-3x"></i>
+		    </div>
+		</div> 
 		<img class="bg" src="http://farm6.staticflickr.com/5490/11180209884_800f8e956e_o.jpg">
 		
 		<div class="album_desc_container">

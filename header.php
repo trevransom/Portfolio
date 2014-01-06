@@ -11,6 +11,7 @@ include "process_login_form.php";
 			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="/Portfolio/js/jquery.isotope.min.js"></script>
+			<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 		</head>
 
 		
@@ -42,8 +43,13 @@ include "process_login_form.php";
 					<li>//</li>
 					<li><a href="/Portfolio/home">Home</a></li>
 
-					
-					<!-- display the following link only if the user is logged in.  -->
+					<li><i id="expand_navbar" class="fa fa-bars fa-2x"></i></li>
+
+					<div id="small_nav">
+						<li><a href="/Portfolio/home">Home</a></li>
+						<li><a href="/Portfolio/sounds">Sounds</a></li>
+						<li><a href="/Portfolio/photos">Photography</a></li>
+					</div>
 					
 				</ul>
 			</div>
