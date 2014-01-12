@@ -76,6 +76,7 @@ body {
 }
 
 .album_desc_container {
+	display: none;
 	/*background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 1) 10%);*/
 	background: white;
 	font-family: sans-serif;
@@ -85,7 +86,7 @@ body {
 	/*left: 0.5em;*/
 	width: 100%;
 	min-width: 150px;
-	top: 44em;
+	top: 42em;
 	height: auto;
 	/*padding-top: 25px;*/
 }
@@ -98,6 +99,7 @@ body {
 
 .album_desc_title {
 	position: relative;
+	padding-top: 1em;
 }
 
 .album_object {
@@ -131,24 +133,7 @@ body {
 	text-align: center;
 }
 
-.blog_post {
-	/*width: 40em;*/
-	/*background: #B15553;*/
-	/*background: rgba(239, 223, 187, 1);*/
 
-	/*background: white;*/
-	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
-	font-family: sans-serif;
-	font-size: 1em;
-	font-weight: 100;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	min-width: 150px;
-	top: 58em;
-	height: 34em;
-	padding-top: 25px;
-}
 
 #blog_submit_form {
 	border-style: none;
@@ -251,12 +236,6 @@ body {
 	background: #15B1ED;
 }
 
-#current_post {
-	position: absolute;
-	top: 6em;
-	left: 42%;
-}
-
 #expand_navbar {
 	display: inline;
 	position: fixed;
@@ -265,16 +244,22 @@ body {
 	left: .3em;
 }
 
+#hover_area {
+	width: 5em;
+	height: 4em;
+}
+
 #small_nav {
 	position: fixed;
 	top: 3em;
-	left: 3em;
+	left: 0;
 	width: 16em;
 	background: rgba(255,246,255, .9);
 	padding: 1.25em;
 	-webkit-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
 	-moz-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
 	box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	display: none;
 }
 
 #small_nav li {
@@ -282,6 +267,10 @@ body {
 	position: relative;
 	padding-bottom: .5em;
 	border-bottom: 1px solid black;
+}
+
+#small_nav :nth-child(3) {
+	border-bottom: 0px solid black;
 }
 
 #minus {
@@ -295,14 +284,6 @@ body {
 #minus:hover {
 	color: white;
 }
-
-
-#nav {
-	color: black;
-	position: relative;
-	bottom: 2em;
-}
-
 
 #navbar #small_nav li {
 	position: relative;
@@ -356,15 +337,14 @@ body {
 
 #container ul {
 	position: relative;
-	/*padding: 0 3em 0;*/
-	padding-left: 3.5em;
-	/*left: 1.9em;*/
+	padding-left: .1em;
 }
 
 .photo {
-  width: 200px;
+  width: 31%;
+  min-width: 200px;
   /*margin: 1px;*/
-  padding: 10px;
+  padding: 6px;
   /*float: left;*/
 }
 
@@ -373,7 +353,7 @@ body {
 }
 
 .photo.large {
-  width: 640px;
+  width: 90%;
   z-index: 3;
 }
 
@@ -423,11 +403,25 @@ body {
 	color: white;
 }
 
+.blog_post {
+	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
+	font-family: helvetica;
+	font-size: 1em;
+	font-weight: 100;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	min-width: 150px;
+	top: 58em;
+	height: 36em;
+	padding-top: 25px;
+}
+
 #post_container {
 	position: relative;
-	/*background: white;*/
-	width: 50%;
-	left: 25%;
+	left: 15%;
+	width: 70%;
+	
 	overflow: auto;
 	top: 2em;
 	height: 26.25em;
@@ -445,6 +439,8 @@ body {
 
 #blog_post_content {
 	position: relative;
+	width: 100%;
+	padding:0;
 	top: 2em;
 }
 
@@ -453,9 +449,21 @@ body {
 	/*left: 2em;*/
 }
 
+#current_post {
+	position: absolute;
+	top: 0em;
+	left: 42%;
+}
+
+#nav {
+	color: black;
+	position: relative;
+	top: 6em;
+}
+
 .overlay {
     position: relative;
-    z-index: 9;
+    z-index: 2;
     
     max-width: 28em;
     max-height: 8em;
@@ -699,6 +707,52 @@ body {
 	height: 2em;
 	width: 50%;
 	resize: none;
+}
+
+.scrolling_options {
+	list-style-type: none;
+	padding: 2em 2em 2em 2em;
+	position: fixed;
+	z-index: 9;
+	top: 56%;
+	right: 0;
+	width: 6em;
+	line-height: 2.5em;
+}
+
+.scroll_background {
+	display: none;
+	padding: 2em 2em 2em 2em;
+	position: fixed;
+	z-index: 9;
+	top: 56%;
+	right: 0;
+	width: 6.5em;
+	height: 5em;
+	-moz-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.scrolling_options li div{
+	color: black;
+	float: right;
+}
+
+.scrolling_options li div i{
+	color: #15B1ED;
+}
+
+.scroll_options_title {
+	color: black;
+	font-family: Dense;
+	font-size: 1.5em;
+	letter-spacing: .3em;
+	text-decoration: none;
+	position: relative;
+	right: .5em;
+	bottom: .1em;
+	/*display: none;*/
 }
 
 #white {

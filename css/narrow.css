@@ -76,6 +76,7 @@ body {
 }
 
 .album_desc_container {
+	display: none;
 	/*background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 1) 10%);*/
 	background: white;
 	font-family: sans-serif;
@@ -84,28 +85,30 @@ body {
 	position: relative;
 	/*left: 0.5em;*/
 	width: 100%;
-	min-width: 150px;
-	top: 44em;
+	/*min-width: 150px;*/
+	top: 42em;
 	height: auto;
 	/*padding-top: 25px;*/
 }
 
 .album_desc_content {
 	position: relative;
-	padding: 1em 4em;
+	padding: 1em 1.5em;
+	width: 82%;
 	/*left: 0;*/
 }
 
 .album_desc_title {
 	position: relative;
+	padding-top: 1em;
 }
 
 .album_object {
 	position: relative;
 	left: 25%;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	width: 50%;
+	/*padding-top: 4em;*/
+	/*padding-bottom: 4em;*/
+	width: 100%;
 }
 
 .bg {
@@ -129,25 +132,6 @@ body {
 	top: 22%;
 	background-color: rgba(0,0,0,.2);
 	text-align: center;
-}
-
-.blog_post {
-	/*width: 40em;*/
-	/*background: #B15553;*/
-	/*background: rgba(239, 223, 187, 1);*/
-
-	/*background: white;*/
-	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
-	font-family: sans-serif;
-	font-size: 1em;
-	font-weight: 100;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	min-width: 150px;
-	top: 58em;
-	height: 34em;
-	padding-top: 25px;
 }
 
 #blog_submit_form {
@@ -218,7 +202,7 @@ body {
 	font-size: 5em;
 	position: relative;
 	bottom: .5em;
-	left: 10%;
+	left: 15%;
 
 }
 
@@ -251,18 +235,41 @@ body {
 	background: #15B1ED;
 }
 
-#current_post {
-	position: absolute;
-	top: 6em;
-	left: 42%;
-}
-
 #expand_navbar {
 	display: inline;
 	position: fixed;
 	cursor: pointer;
 	top: 0;
 	left: .3em;
+}
+
+#hover_area {
+	width: 5em;
+	height: 4em;
+}
+
+#small_nav {
+	position: fixed;
+	top: 3em;
+	left: 0;
+	width: 16em;
+	background: rgba(255,246,255, .9);
+	padding: 1.25em;
+	-webkit-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	-moz-box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	box-shadow: 8px 10px 14px -2px rgba(0,0,0,0.78);
+	display: none;
+}
+
+#small_nav li {
+	width: 100%;
+	position: relative;
+	padding-bottom: .5em;
+	border-bottom: 1px solid black;
+}
+
+#small_nav :nth-child(3) {
+	border-bottom: 0px solid black;
 }
 
 #minus {
@@ -276,16 +283,6 @@ body {
 #minus:hover {
 	color: white;
 }
-
-
-#nav {
-	/*padding-top: 10px;*/
-	color: black;
-	position: relative;
-	bottom: 2em;
-	/*padding: 1em;*/
-}
-
 
 #navbar li{
 	position: relative;
@@ -316,8 +313,7 @@ body {
 #navbar li a:hover{
 	/*text-decoration: underline;*/
 	width: 90%;
-	/*color: rgba(255,246,90, .7);*/
-	color: white;
+	color: #15B1ED;
 }
 
 #navbar_gradient {
@@ -329,36 +325,44 @@ body {
     left: 0;
     z-index: 6;
 }
+#loading_icon {
+	/*padding: .26em;*/
+	
+	z-index: 999;
+	color: black;
+}
 
 #container {
 	position: relative;
-	/*left: 0;*/
-	top: 2em;
-	border: 2px solid;
+	left: 0;
+	top: 0em;
+	float: left;
+	width: 100%;
+	border: 0px solid;
 	height: auto;
 	background: white;
 }
 
 #container ul {
 	position: relative;
-	/*padding: 0 3em 0;*/
-	padding-left: 3.5em;
-	/*left: 1.9em;*/
+	padding: 0em;
+	width: 100%;
 }
 
 .photo {
-  width: 200px;
-  /*margin: 1px;*/
-  padding: 10px;
-  /*float: left;*/
+  width: 90%;
+  padding: 10px 0;
+  padding-left: 5%;
+  float: left;
 }
 
 .photo.double {
-  width: 480px;
+  width: 100%;
 }
 
 .photo.large {
-  width: 640px;
+	width: 90%;
+  /*width: 640px;*/
   z-index: 3;
 }
 
@@ -366,12 +370,12 @@ body {
 .photo .big-image { display: none; }
 
 
-/*.photo .small-image,
-.photo.large .big-image { display: block; }*/
-
 .photo img {
   display: block;
   width: 100%;
+  cursor: default;
+  float: left;
+  padding-left: 0;
 }
 
 .photo .loading {
@@ -408,11 +412,24 @@ body {
 	color: white;
 }
 
+.blog_post {
+	background-image: -webkit-linear-gradient(top, rgba(153, 153, 153, .2) 0%, rgba(255, 255, 255, 1) 30%);
+	font-family: helvetica;
+	font-size: 1em;
+	font-weight: 100;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 58em;
+	height: 38em;
+	padding-top: 25px;
+}
+
 #post_container {
 	position: relative;
-	/*background: white;*/
-	width: 50%;
-	left: 25%;
+	left: 5%;
+	width: 90%;
+	
 	overflow: auto;
 	top: 2em;
 	height: 26.25em;
@@ -430,6 +447,8 @@ body {
 
 #blog_post_content {
 	position: relative;
+	width: 100%;
+	padding:0;
 	top: 2em;
 }
 
@@ -438,45 +457,56 @@ body {
 	/*left: 2em;*/
 }
 
+#current_post {
+	position: absolute;
+	top: 0em;
+	left: 42%;
+}
+
+#nav {
+	color: black;
+	position: relative;
+	top: 6em;
+}
+
 .overlay {
-    position: absolute;
-    z-index: 999;
+    position: relative;
+    z-index: 2;
+    
+    max-width: 28em;
+    max-height: 8em;
+    bottom: 14em;
     left: 0;
-    bottom: 0;
-    margin: 2.8em;
-    width: 80%;
-    height: 30%;
-    /*background: gray;*/
-    /*background: #bac6cc;*/
-    background: rgba(186,198,204,.9);
-    /*background: #15B1ED*/
-    /*background: #8A8272;*/
-    /*background-image: -webkit-linear-gradient(left, rgba(21,177,237, .9) 0%, rgba(186,198,204, 1) 80%);*/
+    margin: 0 2em;
+    background: rgba(186,198,204,.4);
     opacity: 1;
 }
 
 .overlay_border_left {
 	position: relative;
 	border-top:2px solid black; 
-	width:50%; 
-	left:4em;
+	max-width:50%;
+	left: 25%;
 }
 
 .overlay_border_right {
 	position: relative;
 	border-top:2px solid black; 
-	width:50%; 
-	left:4em;
+	max-width:50%;
+	left: 25%;
 }
 
 .overlay_text {
 	font-family: Dense;
 	font-size: 1.5em;
-	position: relative;
+	position: absolute;
 	color: black;
 	text-align: center;
-	/*top: 10%;*/
-	margin: .5em 0;
+	width: 100%;
+	/*left: 20%;*/
+	bottom: 30%;
+	padding-right: 1em;
+	/*margin: 1em 1em;*/
 }
 
 .settings {
@@ -503,6 +533,20 @@ body {
 	float: right;
 }
 
+.scrolling_options {
+	display: none;
+	list-style-type: none;
+	padding: 2em 2em 2em 2em;
+	position: fixed;
+	z-index: 9;
+	top: 56%;
+	right: 0;
+	width: 8em;
+	/*background-color: rgba(255, 255, 255, .7);*/
+	-moz-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+	line-height: 2.5em;
+}
 
 .sound_title {
 	position: relative;
@@ -651,9 +695,6 @@ body {
 
 }
 
-/*.thing:hover .overlay {
-    opacity: 1;
-}*/
 
 #things {
     position: relative;

@@ -18,8 +18,6 @@
         return this.each(function() {    
           
           var gallery = $(this);
-          // gallery.addClass('photo');
-          // gallery.addClass('small_image');
           gallery.append('<div id="container"><ul></ul></div>');
           
           $.getJSON(url, {
@@ -28,8 +26,6 @@
             photoset_id: settings.photoset_id,
             format: 'json'
           }).success(function(state) {
-            // gallery.children('h2').html(state.photoset.title._content);
-            // gallery.children('h3').html(state.photoset.description._content);
             
             $.getJSON(url, {
               method: 'flickr.photosets.getPhotos',
@@ -43,6 +39,7 @@
               list.html('');
               $( window ).load( view_image );
               
+              
               $.each(state.photoset.photo, function(){
                 var large_image = this.url_m;
                 large_image = large_image.replace(".jpg", "_b.jpg");
@@ -54,13 +51,13 @@
 
               var $container = $('#container ul'),
                   $photos = $container.find('.photo'),
-                  $loadingIndicator = $('<div class="loading"><span><img src="http://i.imgur.com/IE7iw.gif" /></span></div>');
+                  $loadingIndicator = $('<div class="loading"><span><i id="loading_icon" class="fa fa-spinner fa-spin fa-2x"></i></span></div>');
 
               // trigger Isotope after images have loaded
               $container.imagesLoaded( function(){
                 $container.isotope({
                   masonry: {
-                    columnWidth: 10
+                    columnWidth: 1
                   },
                   itemSelector : '.photo'
                 });
@@ -124,10 +121,5 @@
 
       };
     })( jQuery );
-
-    // $(document).on('ready', function(){
-    //   $('div#gallery').flickr({ photoset_id: '72157637815342213'});
-    // });
-
 
 

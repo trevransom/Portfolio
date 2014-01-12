@@ -101,23 +101,24 @@ mysql_close($connection);
 			?>
 		</div>
 
-
+		<div class="scroll_background"></div>
 		<ul class="scrolling_options">
-			<li>
-				<a href="#top">
-					<div><i class="fa fa-circle-o"></i></div>
-					<div><p class="scroll_options_title">Cover</p></div>
-				</a>
-				
-			</li>
-			<br>
-			<li>
-				<a href="#post_container">
-					<div><i class="fa fa-circle-o"></i></div>
-					<div><p class="scroll_options_title">Blog</p></div>
-				</a>
-				
-			</li>
+				<li>
+					<a href="#top">
+						<div><i class="fa fa-circle-o"></i></div>
+						<div><p class="scroll_options_title">Cover</p></div>
+					</a>
+					
+				</li>
+				<br>
+				<li>
+					<a href="#post_container">
+						<div><i class="fa fa-circle-o"></i></div>
+						<div><p class="scroll_options_title">Blog</p></div>
+					</a>
+					
+				</li>
+			
 		</ul>
 
 		<div class="blog_post">
@@ -130,8 +131,6 @@ mysql_close($connection);
 			<div id="nav"></div>
 			
 			<script> request_page(<? echo $total_rows; ?>);</script>
-		
-			<!-- 	<script src="js/scripts.js"></script> -->
 		</div>
 	</body>
 </html>
