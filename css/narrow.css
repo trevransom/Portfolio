@@ -268,7 +268,7 @@ body {
 	border-bottom: 1px solid black;
 }
 
-#small_nav :nth-child(4) {
+#small_nav :nth-child(5) {
 	border-bottom: 0px solid black;
 }
 
@@ -716,7 +716,7 @@ body {
 
 .thing {
 	display: inline;
-	max-width: 99.6%;
+	max-width: 99.5%;
 	float: left;
 	/*position: relative;*/
 }
@@ -747,11 +747,10 @@ body {
 
 .contact_position > div {
 	position: absolute;
-	left: 25%;
-	margin-left: -1em;
-	/*padding: 1em;*/
+	left: 20%;
+	margin-left: -1.5em;
 	top: 7em;
-	/*width: 65%;*/
+	padding-left: 1em;
 }
 
 .contact_position h1 {
@@ -768,19 +767,16 @@ body {
 
 #contact {
 	position: absolute;
-	left: 40%;
-	/*margin-left: -8em;*/
-	/*padding: 1em;*/
-	/*padding-left: 5em;*/
+	left: 42%;
 	text-align: center;
 	top: 5em;
-	width: 200%;
+	width: 190%;
 	line-height: 3em;
 }
 
 #contact_prompt {
 	font-family: Dense;
-	font-size: 1.5em;
+	font-size: 1.65em;
 }
 
 #email {
@@ -791,5 +787,5 @@ body {
 #contact div a{
 	position: relative;
 	border-bottom: 1px dashed black;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }

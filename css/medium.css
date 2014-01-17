@@ -269,7 +269,7 @@ body {
 	border-bottom: 1px solid black;
 }
 
-#small_nav :nth-child(4) {
+#small_nav :nth-child(5) {
 	border-bottom: 0px solid black;
 }
 
@@ -470,7 +470,7 @@ body {
     bottom: 14em;
     left: 0;
     margin: 0 2em;
-    background: rgba(186,198,204,.9);
+    background: rgba(186,198,204,.6);
     opacity: 0;
 }
 

@@ -39,6 +39,8 @@ include "process_login_form.php";
 					</div>
 					<li><a href="/Portfolio/contact">Contact</a></li>
 					<li>//</li>
+					<li><a href="/Portfolio/portfolio">Work</a></li>
+					<li>//</li>
 					<li><a href="/Portfolio/photos">Photography</a></li>
 					<li>//</li>
 					<li><a href="/Portfolio/sounds">Sounds</a></li>
@@ -52,6 +54,7 @@ include "process_login_form.php";
 							<li><a href="/Portfolio/home">Home</a></li>
 							<li><a href="/Portfolio/sounds">Sounds</a></li>
 							<li><a href="/Portfolio/photos">Photography</a></li>
+							<li><a href="/Portfolio/portfolio">Work</a></li>
 							<li><a href="/Portfolio/contact">Contact</a></li>
 						</div>
 					</div>

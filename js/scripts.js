@@ -21,7 +21,7 @@ $('#hover_area').click(function(){
 });
 
 function adjustStyle(width) {
-    var nav = $('#navbar li').slice(2, 9);
+    var nav = $('#navbar li').slice(2, 11);
     width = parseInt(width);
     if (width < 500) {
         $("#size-stylesheet").attr("href", "/Portfolio/css/narrow.css");

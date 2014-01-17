@@ -339,13 +339,10 @@ span #loading_icon {
 }
 
 #navbar li a:hover{
-	/*text-decoration: underline;*/
-	/*width: 60%;*/
-	text-decoration:line-through;
+	text-decoration: line-through;
 	background: rgba(255,246,90, .7);
 	color: white;
 	background: black;
-	text-decoration: strikethrough;
 }
 
 #navbar_gradient {
@@ -512,7 +509,7 @@ span #loading_icon {
     max-width: 28em;
     height: 12em;
     
-    background: rgba(186,198,204,.9);
+    background: rgba(186,198,204,.6);
     opacity: 0;
 }
 
@@ -897,4 +894,133 @@ a:link {
 	border-bottom: 1px dashed black;
 }
 
+#portfolio_hidden {
+	display: none;
+}
 
+.projects {
+	position: absolute;
+	left: 0;
+	width: 100vw;
+	max-width: 100%;
+}
+
+.portfolio_position {
+	/*display: none;*/
+	position: fixed;
+	background-color: rgba(255, 255, 255, .4);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+}
+
+.souleader_descrip {
+	position: fixed;
+	top: 12em;
+	left: 45.5%;
+	margin-left: -25em;
+	padding: 4em 3em;
+	background: white;
+	width: 50em;
+	height: auto;
+}
+
+.white_wall {
+	position: relative;
+	top: 50em;
+	padding: 4em 3em;
+	max-width: 93.2%;
+	height: 25em;
+	background: white;
+}
+
+.fixed {
+    position: fixed; 
+	top: 12em;
+	width: 100%;
+    height: 25em;
+    left: 0;
+}
+
+.white_wall2 {
+	position: relative;
+	top: 100em;
+	padding: 4em 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 30em;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 1) 20%);
+	border: 1px solid black;
+}
+
+
+
+.souleader_descrip div{
+	width: 38.5%;
+	float: left;
+	padding-right: 2em;
+	border-right: 1px solid black;
+	min-width: 17em;
+}
+
+
+.souleader_descrip h1 {
+	padding-bottom: .2em;
+	text-shadow: 2px 2px 2px #000;
+	width: 3.75em;
+	font-family: Dense;
+	font-size: 5em;
+	letter-spacing: .15em;
+	font-weight: 100;
+	border-bottom: 1px solid black;
+}
+
+.souleader_descrip p {
+	position: relative;
+	padding-top: 1em;
+	font-family: Helvetica Neaue;
+}
+
+.souleader_descrip img {
+	position: absolute;
+	padding-top: 2em;
+	padding-left: 1em;
+	top: 0;
+	margin: 3em 1em;
+	width: 50%;
+	min-width: 28em;
+	height: auto;
+	float: left;
+}
+
+
+
+#switch_page_icon i {
+	font-size: 8em;
+	cursor: pointer;
+	z-index: 1;
+	/*opacity: .2;*/
+}
+
+#right_arrow_port {
+	position: fixed;
+	bottom: 2%;
+	right: 6%;
+}
+
+#left_arrow_port {
+	position: fixed;
+	bottom: 2%;
+	left: 6%;
+}
+
+.low_opacity {
+	opacity: .4;
+}
+
+.arrow_hover {
+	opacity: .7;
+	color: #15B1ED;
+}
