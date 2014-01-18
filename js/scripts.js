@@ -8,6 +8,12 @@ $(window).load(function() {
   $(".album_desc_container").fadeIn(2000);
 });
 
+$(function(){
+  $('#navbar li a').hover(function(){
+    $(this).toggleClass('navbar_hover', 200);
+  });
+});
+
 $('#hover_area')
   .on('mouseover', function(){
       $('#small_nav').show("slide", 300);
@@ -67,9 +73,9 @@ $(document).ready(function(){
 
   $('.scrolling_options').hover(function(){
       $('.scroll_background').fadeToggle(200);
+      $('.scroll_background_projects').fadeToggle(200);
   });
 });
-
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {

@@ -297,10 +297,10 @@ body {
 }
 
 #navbar li a{
-	text-decoration: none;
-	color: black;
+	/*text-decoration: none;*/
+	/*color: black;*/
 	letter-spacing: .25em;
-	color: #211B20;
+	/*color: #211B20;*/
 	padding: 1em;
 	
 }
@@ -310,10 +310,14 @@ body {
 	margin-right: 0;
 }
 
-#navbar li a:hover{
-	/*text-decoration: underline;*/
-	width: 90%;
-	color: #15B1ED;
+.navbar_hover{
+	/*display: none;*/
+	border-bottom: 1px solid white;
+	text-decoration: line-through;
+	/*background: rgba(255,246,90, .7);*/
+	/*color: #211B20;*/
+	color: white;
+	background: black;
 }
 
 #navbar_gradient {

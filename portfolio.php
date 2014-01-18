@@ -6,30 +6,76 @@ include "header.php";
 		<script src="/Portfolio/js/page_switch.js"></script>
 	</head>
 	<body>
+		<div id="top"></div>
+		<div id="skills"></div>
 		<div id="portfolio_hidden">
 			<div class="portfolio_position"></div>
+			<div class="scroll_background_projects"></div>
+			<ul class="scrolling_options">
+				<li>
+					<a href="#top">
+						<div><i class="fa fa-circle-o"></i></div>
+						<div><p class="scroll_options_title">What</p></div>
+					</a>
+				</li>
+				<br>
+				<li>
+					<a href="#skills">
+						<div><i class="fa fa-circle-o"></i></div>
+						<div><p class="scroll_options_title">How</p></div>
+					</a>
+				</li>
+				<br>
+				<li>
+					<a href="#visit">
+						<div><i class="fa fa-circle-o"></i></div>
+						<div><p class="scroll_options_title">Where</p></div>
+					</a>
+				</li>
+			</ul>
 			<div class="projects">
 				<div class="souleader_descrip">
 					<div>
 						<!-- <h1>Souleader</h1> -->
 						<h1>Souleader</h1>
-						<p>Drinking vinegar 3 wolf moon church-key, meh selfies Pitchfork irony Banksy ad cred 
-						iPhone trust fund Austin culpa. Scenester veniam hoodie paleo eu beard. Locavore typewriter 
-						Williamsburg brunch Godard, ea authentic. Ex food truck occupy gluten-free. Messenger bag Thundercats 
-						+1 mustache cray freegan Shoreditch McSweeney's, post-ironic delectus irony velit put a bird on it Etsy 
-						selvage. American Apparel in Odd Future, trust fund biodiesel put a bird on it bitters DIY asymmetrical 
-						Brooklyn Tonx. Jean shorts gentrify hashtag chambray butcher.
+						<p>
+							SOULeader is an organization created by Michael Bischof. His purpose for SOULeader 
+							is to "come alongside those who are in the trenches" of spiritual ministry 
+							"for support, care, nurture, and resources."
+							<br><br>
+							<a id="souleader_link" href="#">SOULeader.org</a> does just that, by offering direction, and resources for all those who are
+							"in the trenches" and seeking counsel. 
 						</p>
 					</div>
-					<img src="img/souleader.png">
+					<div id="border_nodrop">
+						<img src="img/souleader.png">
+					</div>
 				</div>
 				
-				<div class="white_wall">
-					<p>This was a project that involved....</p>
+				<div class="souleader_second_panel">
+
+					<div id="skills_used">
+						<h1>Skills Used:</h1>
+					</div>
+					
+					<div id="skills_used_list">
+						<!-- <br> -->
+						<ul>
+							<li>CSS</li>
+							<li>HTML</li>
+							<li>Wordpress</li>
+							<li>Graphic Design</li>
+							
+						</ul>
+					</div>
 				</div>
 				
-				<div class="white_wall2">
-					<p>This was a project that involved....</p>
+				<div id="visit" class="white_wall2">
+					<!-- <p>This was a project that involved....</p> -->
+					<a href="http://www.souleader.org/" target="_blank"><div class="visit">Visit Site</div></a>
+					<img id="skills_img_solo" src="img/souleader_banner.png">
+
+					<!-- Different color background, try color generator bookmark, include a nice pic from site with drop shadow -->
 				</div>
 			</div>
 			<div id="switch_page_icon">
