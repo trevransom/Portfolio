@@ -10,7 +10,7 @@ $(window).load(function() {
 
 $(function(){
   $('#navbar li a').hover(function(){
-    $(this).toggleClass('navbar_hover', 200);
+    $(this).toggleClass('navbar_hover', 100);
   });
 });
 
