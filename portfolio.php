@@ -33,17 +33,17 @@ include "header.php";
 					</a>
 				</li>
 			</ul>
-			<div class="projects">
 
+			<div class="projects">
 			</div>
+
 			<div id="switch_page_icon">
 				<div><i id="right_arrow_port" class="low_opacity fa fa-angle-right"></i></div>
 				<div><i id="left_arrow_port" class="low_opacity fa fa-angle-left"></i></div>
 			</div>
 		</div>
 		<script>
-			var change = $("#switch_page_icon i");
-			change.hover(function(){
+			$("#switch_page_icon i").hover(function(){
 				$(this).toggleClass('arrow_hover', 200);
 			});
 

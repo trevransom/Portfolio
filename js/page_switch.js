@@ -1,9 +1,9 @@
 $(function()
 {
 	var urls = [
-		"/Portfolio/work/trevransom",
 		"/Portfolio/work/souleader",
-		"/Portfolio/work/trevransom"
+		"/Portfolio/work/trevransom",
+		"/Portfolio/work/souleader"
 	];
 
 	// $('.projects').load(urls[1]).fadeIn(300);
@@ -41,15 +41,29 @@ $(function() {
 });
 
 $(document).ready(function(){
-   $(window).bind('scroll', function() {
+   $(window).on('scroll', function() {
     var navHeight = $( window ).height()-88;
         if ($(window).scrollTop() > navHeight) {
 		 	$('.souleader_second_panel').addClass('fixed');
-		 	$('.souleader_descrip').fadeOut(500);
+		 	$('.first_panel').fadeOut(500);
 		}
 		else {
 		 	$('.souleader_second_panel').removeClass('fixed');
-		 	$('.souleader_descrip').fadeIn(800);
+		 	$('.first_panel').fadeIn(800);
+		}
+    });
+});
+
+$(document).ready(function(){
+   $(window).on('scroll', function() {
+    var navHeight = $( window ).height()-88;
+        if ($(window).scrollTop() > navHeight) {
+		 	$('.trevransom_second_panel').addClass('fixed');
+		 	$('.first_panel').fadeOut(500);
+		}
+		else {
+		 	$('.trevransom_second_panel').removeClass('fixed');
+		 	$('.first_panel').fadeIn(800);
 		}
     });
 });

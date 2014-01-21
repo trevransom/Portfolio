@@ -11,7 +11,7 @@ include "header.php";
 				<div id="contact">
 					<div id="contact_prompt">Contact me with any questions or job inquiries via:
 						<div id="email">
-							<a href="mailto:trev.ransom@me.com">trev.ransom@me.com</a>
+							<a href="mailto:trev.ransom@icloud.com">trev.ransom@icloud.com</a>
 						</div>
 					</div>
 				</div>

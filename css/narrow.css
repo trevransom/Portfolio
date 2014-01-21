@@ -793,3 +793,179 @@ body {
 	border-bottom: 1px dashed black;
 	font-size: 1.25em;
 }
+
+.first_panel {
+	position: fixed;
+	/*top: 11em;*/
+	left: 0;
+	bottom: 0;
+	/*float: left;*/
+	margin-left:0;
+	padding: 2em 1em;
+	/*margin-right: auto;*/
+	/*margin-left: 2em;*/
+	/*right: 4em;*/
+	background: white;
+	width: 100%;
+	height: auto;
+}
+
+.first_panel div{
+	width: 90%;
+	float: left;
+	padding-bottom: 2em;
+	/*border-right: 0;*/
+	padding-right: .55em;
+	border-bottom: 4px double black;
+	/*min-width: 17em;*/
+}
+
+
+.first_panel h1 {
+	padding-bottom: .2em;
+	text-shadow: 2px 2px 2px #000;
+	width: 5.45em;
+	font-family: Dense;
+	font-size: 3em;
+	letter-spacing: .3em;
+	font-weight: 100;
+	border-bottom: 4px double black;
+}
+
+.first_panel p {
+	position: relative;
+	padding-top: 1em;
+	font-family: Helvetica Neaue;
+}
+
+.first_panel img {
+	position: relative;
+	padding-top: 0em;
+	/*padding-bottom: 10em;*/
+	padding-left: 0em;
+	top: 1em;
+	/*bottom: 114em;*/
+	margin: 0;
+	width: 100%;
+	min-width: 0;
+	height: auto;
+	/*float: left;*/
+}
+
+#skills_used {
+	float: left;
+	position: relative;
+	padding: .5em;
+	/*border: 1px solid white;*/
+	width: 100%;
+	color: white;
+	font-family: Helvetica Neaue;
+}
+
+
+#skills_used h1 {
+	padding: 0 0 .2em 0;
+	/*padding: .25em 1em;*/
+	position: relative;
+	left: 100%;
+	margin-left: -1.6em;
+	width: 3.98em;
+	text-align: center;
+	font-family: Dense;
+	font-size: 4em;
+	letter-spacing: .1em;
+	font-weight: 100;
+	/*line-height: 1em;*/
+	border-bottom: 1px solid white;
+	border-right: 0px solid white;
+
+}
+
+.trevransom_second_panel #skills_used_list {
+	float: left;
+	position: relative;
+	left: 15%;
+	/*list-style: none;*/
+	margin-left: 0em;
+	top: 5%;
+	text-align: center;
+	padding: .25em;
+	border-bottom: 6px double white;
+	border-top: 6px double white;
+	line-height: 1.5em;
+	color: white;
+	width: 60%;
+	font-family: Helvetica Neaue;
+	font-size: 1.35em;
+	letter-spacing: .12em;
+}
+
+.souleader_second_panel #skills_used_list {
+	float: left;
+	position: relative;
+	left: 15%;
+	/*list-style: none;*/
+	margin-left: 0em;
+	top: 5%;
+	text-align: center;
+	padding: .25em;
+	border-bottom: 6px double white;
+	border-top: 6px double white;
+	line-height: 2.5em;
+	color: white;
+	width: 60%;
+	font-family: Helvetica Neaue;
+	font-size: 1.35em;
+	letter-spacing: .12em;
+}
+
+#skills_used_list li {
+	list-style: none;
+}
+
+.third_panel {
+	position: absolute;
+	overflow: hidden;
+	top: 150em;
+	height: 50em;
+	width: 100%;
+	background-image: url('/Portfolio/img/wood_texture_blur.jpg');
+}
+
+.skills_img_solo {
+	position: relative;
+	top: 9em;
+	min-width: 50em;
+	width: 200%;
+	left: 2%;
+	margin-left: -14em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .95;
+}
+
+.souleader_skills_img_solo {
+	display: none;
+	position: relative;
+	top: 9em;
+	min-width: 40em;
+	width: 150%;
+	left: 20%;
+	margin-left: -14em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .95;
+}
+
+.souleader_skills_img_small {
+	display: inline;
+	position: relative;
+	top: 9em;
+	min-width: 0em;
+	width: 100%;
+	left: 0;
+	margin-left: 0em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .95;
+}

@@ -14,13 +14,19 @@ $(function(){
   });
 });
 
+$(function(){
+$("#center").hover(function(){
+  $(this).toggleClass('low_opacity_home', 500, 'easeOutCirc');
+});
+});
+
 $('#hover_area')
-  .on('mouseover', function(){
-      $('#small_nav').show("slide", 300);
-  })
-  .on('mouseleave', function(){
-      $('#small_nav').hide("slide", 300);
-  });
+.on('mouseover', function(){
+    $('#small_nav').show("slide", 300);
+})
+.on('mouseleave', function(){
+    $('#small_nav').hide("slide", 300);
+});
 
 $('#hover_area').click(function(){
     $('#small_nav').toggle("slide", 300);

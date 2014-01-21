@@ -92,13 +92,14 @@ mysql_close($connection);
 		
 		<div id="top"></div>
 		<div id="center">
-			<h1>Home Page</h1>
+			<!-- <h1>Home Page</h1>
 			<? if ($_SESSION["authenticated"]==true) 
 					echo "You are logged in!";
 				else
 					echo "You are not logged in.";
 				
-			?>
+			?> -->
+			<a href="http://localhost:8888/Portfolio/portfolio"><div>TR</div></a>
 		</div>
 
 		<div class="scroll_background"></div>

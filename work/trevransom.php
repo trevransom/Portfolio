@@ -1,42 +1,40 @@
 <script src="/Portfolio/js/page_switch.js"></script>
-				<div class="souleader_descrip">
-					<div>
-						<!-- <h1>Souleader</h1> -->
-						<h1>Souleader</h1>
-						<p>
-							Posh spice...
-							<br><br>
-							<a id="souleader_link" href="http://www.souleader.org/" target="_blank">SOULeader.org</a> does just that, by offering direction, and resources for all those who are
-							"in the trenches" and seeking counsel. 
-						</p>
-					</div>
-					<div id="border_nodrop">
-						<img src="img/souleader.png">
-					</div>
-				</div>
-				
-				<div class="souleader_second_panel">
+<div class="first_panel">
+	<div>
+		<h1>trevransom</h1>
+		<p>
+			<b>trevransom.com</b> is my portfolio web page. I spent nearly two months building it as an independent study project for school. 
+			It's shown me that, despite all the hours of frustration and hard work, I truly enjoy Web Development and 
+			want to do it for a living. 
+		</p>
+	</div>
+	<div id="border_nodrop">
+		<img src="img/trevransom.png">
+	</div>
+</div>
 
-					<div id="skills_used">
-						<h1>Skills Used:</h1>
-					</div>
-					
-					<div id="skills_used_list">
-						<!-- <br> -->
-						<ul>
-							<li>CSS</li>
-							<li>HTML</li>
-							<li>Wordpress</li>
-							<li>Graphic Design</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				<div id="visit" class="white_wall2">
-					<!-- <p>This was a project that involved....</p> -->
-					<a href="http://www.souleader.org/" target="_blank"><div class="visit">Visit Site</div></a>
-					<img id="skills_img_solo" src="img/souleader_banner.png">
+<div class="trevransom_second_panel">
 
-					<!-- Different color background, try color generator bookmark, include a nice pic from site with drop shadow -->
-				</div>
+	<div id="skills_used">
+		<h1>Skills Used:</h1>
+	</div>
+	
+	<div id="skills_used_list">
+		<ul>
+			<li>CSS</li>
+			<li>HTML</li>
+			<li>jQuery</li>
+			<li>Version Control</li>
+			<li>SQL</li>
+			<li>PHP</li>
+			<li>Graphic Design</li>
+			<li>Typography</li>
+			<li>User Experience</li>
+		</ul>
+	</div>
+</div>
+
+<div id="visit" class="third_panel">
+	<a href="http://localhost:8888/Portfolio/home"><div class="visit">Visit Site</div></a>
+	<img class="skills_img_solo" src="img/trevransom_banner.png">
+</div>

@@ -817,3 +817,145 @@ body {
 	border-bottom: 1px dashed black;
 }
 
+.first_panel #souleader_desc {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-left: 0;
+	padding: 1em;
+	background: white;
+	width: 100%;
+	height: auto;
+}
+
+.first_panel {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-left: 0;
+	padding: 3em;
+	background: white;
+	width: 100%;
+	height: auto;
+}
+
+.first_panel.souleader_desc {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-left: 0;
+	padding: 0.5em 3em;
+	background: white;
+	width: 100%;
+	height: auto;
+}
+
+.first_panel div{
+	width: 80%;
+	float: left;
+	padding-bottom: 1em;
+	padding-right: 1.25em;
+	border-bottom: 1px solid black;
+}
+
+
+.first_panel h1 {
+	padding-bottom: .2em;
+	text-shadow: 2px 2px 2px #000;
+	width: 3.95em;
+	font-family: Dense;
+	font-size: 5em;
+	letter-spacing: .15em;
+	font-weight: 100;
+	border-bottom: 1px solid black;
+}
+
+.first_panel p {
+	position: relative;
+	padding-top: 1em;
+	font-family: Helvetica Neaue;
+}
+
+.first_panel img {
+	position: relative;
+	padding-top: 0em;
+	padding-left: 0em;
+	top: 1em;
+	margin: 0;
+	width: 100%;
+	min-width: 0;
+	height: auto;
+}
+
+.trevransom_second_panel #skills_used_list {
+	float: left;
+	position: relative;
+	left: 45%;
+	margin-left: -10em;
+	top: 6%;
+	padding: .5em;
+	border-bottom: 6px double white;
+	border-top: 6px double white;
+	line-height: 1.75em;
+	color: white;
+	font-family: Helvetica Neaue;
+	font-size: 1.35em;
+	letter-spacing: .12em;
+}
+
+#skills_used h1 {
+	padding: 0 .3em .2em 0;
+	width: 2em;
+	font-family: Dense;
+	font-size: 6em;
+	letter-spacing: .15em;
+	font-weight: 100;
+	line-height: 1.75em;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+
+}
+
+.souleader_second_panel #skills_used_list {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -10em;
+	top: 6%;
+	padding: .5em;
+	border-bottom: 6px double white;
+	border-top: 6px double white;
+	line-height: 2.75em;
+	color: white;
+	font-family: Helvetica Neaue;
+	font-size: 1.45em;
+	letter-spacing: .1em;
+}
+
+.skills_img_solo {
+	position: relative;
+	top: 9em;
+	min-width: 0em;
+	width: 100%;
+	left: 0;
+	margin-left: 0em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .95;
+}
+
+.souleader_skills_img_solo {
+	position: relative;
+	top: 9em;
+	min-width: 0em;
+	width: 100%;
+	left: 0;
+	margin-left: 0em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .95;
+}
+
+.souleader_skills_img_small {
+	display: none;
+}
