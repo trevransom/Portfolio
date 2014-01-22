@@ -1,19 +1,27 @@
+$(function(){
+  $('#portfolio_hidden').fadeIn(700);
+});
+
 $(function()
 {
+	var souleader = $('#souleader_project');
+	var trevransom = $('#trevransom_project');
+	souleader.hide();
+	trevransom.hide();
+
 	var urls = [
-		"/Portfolio/work/souleader",
-		"/Portfolio/work/trevransom",
-		"/Portfolio/work/souleader"
+		souleader,
+		trevransom,
+		souleader
 	];
 
-	// $('.projects').load(urls[1]).fadeIn(300);
-
 	var i = 1;
+	$(urls[i]).fadeIn(300);
+	console.log(i);
 	$('#right_arrow_port').click(function()
 	{
-
-		$('.projects').fadeOut(300, function (){
-			$('.projects').load(urls[i+1]).fadeIn(300);
+		$(urls[i]).fadeOut(200, function (){
+			$(urls[i+1]).fadeIn(300);
 			i++;
 			window.scrollTo(0,0);
 			if (i>urls.length-2){
@@ -24,14 +32,13 @@ $(function()
 
 	$('#left_arrow_port').click(function()
 	{
-		$('.projects').fadeOut(300, function (){
+		$(urls[i]).fadeOut(200, function (){
 			if (i==0){ 
 				i = urls.length-1;
 			}
-			$('.projects').load(urls[i-1]).fadeIn(300);
+			$(urls[i-1]).fadeIn(300);
 			window.scrollTo(0,0);
 			i--;
-			
 		});
 	});
 });
@@ -69,10 +76,6 @@ $(document).ready(function(){
 });
 
 $(function(){
-  $('#portfolio_hidden').fadeIn(700);
-});
-
-$(function(){
   $('.visit').hover(function(){
   	$(this).toggleClass('visit_hover', 500, 'easeOutCirc');
   });
@@ -84,10 +87,8 @@ $(function(){
   });
 });
 
-
-// $(function(){
-// 	var change = $("#switch_page_icon i");
-// 	change.hover(function(){
-// 		$(this).toggleClass('arrow_hover', 200);
-// 	});
-// });
+$(function(){
+	$("#switch_page_icon i").hover(function(){
+		$(this).toggleClass('arrow_hover', 200);
+	});
+});

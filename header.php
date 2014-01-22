@@ -10,7 +10,7 @@ include "process_login_form.php";
 			<link id="size-stylesheet" rel="stylesheet" type="text/css" href="/Portfolio/css/narrow.css" />
 			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-			<script src="/Portfolio/js/jquery.isotope.min.js"></script>
+			
 			<script src="/Portfolio/js/jquery-ui-1.10.3.custom.min.js"></script>
 
 		</head>

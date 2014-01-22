@@ -2,15 +2,34 @@ $(window).load(function() {
   $("#stream").show();
 });
 
+$(function(){
+  $('#twitter i').hover(function(){
+    $(this).toggleClass('twitter_hover', 200);
+  });
+});
+
+$(function(){
+  $('#sounds_album_pic').hover(function(){
+    $(this).toggleClass('sounds_album_cover_wide', 100);
+  });
+});
+
+$(function(){
+  $('.album_desc_container a').hover(function(){
+    $(this).toggleClass('souleader_link_hover', 700, 'easeOutCirc');
+  });
+});
+
 $(window).load(function() {
   // When the page has loaded
   $("#loading").fadeOut(1000);
+  $('.projects').fadeIn(1000);
   $(".album_desc_container").fadeIn(2000);
 });
 
 $(function(){
   $('#navbar li a').hover(function(){
-    $(this).toggleClass('navbar_hover', 100);
+    $(this).toggleClass('navbar_hover', 100, 'easeOutCirc');
   });
 });
 

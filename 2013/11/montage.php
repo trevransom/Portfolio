@@ -4,6 +4,7 @@ include "../../header.php";
 ?>
 	<head>
 		<script src="../../js/flickr_fetch.js"></script>
+		<script src="/Portfolio/js/jquery.isotope.min.js"></script>
 	</head>
 	
 	<body>
@@ -37,9 +38,22 @@ include "../../header.php";
 				<br><br>
 				<p>Photo Cred: Christopher Stutzman</p>
 				<br>
-				<p>Pitchfork artisan Tumblr, ut ennui jean shorts seitan Terry Richardson aute magna slow-carb Truffaut dreamcatcher salvia next level. Nostrud put a bird on it placeat, delectus XOXO gentrify laborum cupidatat id literally PBR. Irony delectus squid Odd Future art party. Cred you probably haven't heard of them veniam nostrud, raw denim gentrify aute vegan skateboard. PBR&B XOXO asymmetrical Pitchfork direct trade, aliqua nulla pug placeat Etsy tote bag nisi 90's. Whatever Wes Anderson veniam eu dolor, ullamco asymmetrical XOXO Terry Richardson fanny pack. VHS magna minim, enim Pinterest aesthetic skateboard.
-				<br><br>
-				Sed street art vero, occupy meggings occaecat dolor reprehenderit. Neutra tempor biodiesel, Portland aute Thundercats officia shabby chic cupidatat pork belly High Life paleo. Reprehenderit DIY Neutra, locavore keytar Carles umami deserunt art party. Ugh ut odio et, artisan fugiat seitan you probably haven't heard of them culpa enim try-hard nihil velit cray. Cardigan mlkshk eu Intelligentsia, sed velit swag photo booth veniam scenester Banksy organic kogi. Vero hella fingerstache vegan meggings, mustache leggings ullamco bicycle rights PBR Portland laborum. Consequat typewriter roof party, kogi nesciunt 3 wolf moon aute chillwave accusamus ugh voluptate church-key pop-up minim.
+				<p>
+					My roommate Chris, and I set out on another photo adventure like the one we had two weeks earlier 
+					(see <a href="http://localhost:8888/Portfolio/2013/11/laguna">Laguna</a>). This time we grabbed our 
+					friend Michael Prigge to join us. About a month before, Chris had been to a little beach below the Montage Resort in Laguna - 
+					and he suggested we go there again. 
+					<br><br>
+					We had a great time wandering through tide pools and climbing rocks, but the best part was when the sun started setting. We
+					walked out onto a rock that jutted far out into the ocean. As the tide came in, the waves started to get bigger, and more intense. 
+					Michael and I cautiously stayed up a bit higher but Chris ventured down into a little valley to get some shots of the waves.
+					The swell continued to build, and at one point it became so powerful that it rocketed over the lip of the rock beneath Chris's feet, 
+					and sent a blast of water over the side - dousing him from the waist down, and threatening to rip his feet out if he remained any longer. 
+					After that, Chris joined us on higher ground. Although it was a scare, it was also exciting, and offered a humbling reminder of our smallness 
+					in contrast with the power of the ocean. 
+					<br><br>
+					I highly recommend Montage, and its beautiful beach. I hope to return soon; just not to get swept away by the waves!
+ 
 				</p>	
 			</div>
 		</div>	

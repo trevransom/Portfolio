@@ -34,6 +34,6 @@
 
 <div id="visit" class="third_panel">
 	<a href="http://www.souleader.org/" target="_blank"><div class="visit">Visit Site</div></a>
-	<img class="souleader_skills_img_solo" src="img/souleader_banner2.png">
+	<img class="souleader_skills_img_solo" src="img/souleader_banner.png">
 	<img class="souleader_skills_img_small" src="img/souleader_banner_small.png">
 </div>

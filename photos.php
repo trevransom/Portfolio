@@ -34,11 +34,11 @@ include "header.php";
                                         </div>
                                 </a>
                         </div>
+                        <!-- <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
                         <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
                         <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
                         <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
-                        <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
-                        <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div>
+                        <div class="thing"><img src="img/laguna_cover.jpg"  alt="me"></div> -->
                 </div>
 	</body>
 </html>

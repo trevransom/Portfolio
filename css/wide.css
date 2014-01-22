@@ -100,6 +100,10 @@ a {
 	/*left: 0;*/
 }
 
+.album_desc_content a {
+	color: #15B1ED;
+}
+
 .album_desc_title {
 	font-family: Dense;
 	font-weight: 500;
@@ -181,19 +185,16 @@ a {
 	position: relative;
 	margin-top: 3px;
 	top: 30%;
-	/*text-align: center;*/
 	right: 3em;
 }
 
 #center {
 	position: absolute;
-	
 	padding: 2em;
-	/*min-width: 10%;*/
-	width: 10.5em;
+	width: 11.5em;
 	text-align: center;
 	left: 42%;
-	top: 25%;
+	top: 35%;
 	background-color: rgba(0,0,0,9);
 	-webkit-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
@@ -284,8 +285,8 @@ a {
 
 span #loading_icon {
 	position: relative;
-	bottom: 60%;
-	right: 50%;
+	bottom: 1em;
+	right: 69%;
 }
 
 .loading_icon_bkrd {
@@ -614,6 +615,13 @@ span #loading_icon {
 	left: 8%;
 }
 
+.sounds_album_cover_wide {
+	/*width: 40%;*/
+	opacity: .9;
+	border-top: 4px double black;
+	border-bottom: 4px double black;
+}
+
 #sounds_album_link {
 	position: relative;
 	border: 1px solid black;
@@ -644,14 +652,15 @@ span #loading_icon {
 }
 
 .sounds_album_cover_title {
-	position: relative;
+	position: static;
 	font-family: sans-serif;
 	color: black;
 	letter-spacing: .45em;
 	z-index: 3;
-	width: 120px;
+	width: 178px;
 	top: 3em;
-	left: 30%;
+	margin: 3em auto -3em;
+	/*left: 24%;*/
 }
 
 #stream_album {
@@ -865,26 +874,25 @@ a:link {
 	color: black;
 	width: 4em;
 	float: left;
-	left: 8em;
+	left: 3em;
 	top: 41%;
 }
 
-#contact_email_plain:hover {
+/*#contact_email_plain:hover {
 	color: #15B1ED;
-}
+}*/
 
-#twitter:hover {
+.twitter_hover {
 	color: #15B1ED;
 }
 
 .contact_position {
 	display: none;
-	position: absolute;
+	position: static;
+	margin: 0 auto;
 	background-color: rgba(255, 255, 255, .5);
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .contact_position > div {
@@ -935,6 +943,7 @@ a:link {
 }
 
 .projects {
+	display: none;
 	position: absolute;
 	left: 0;
 	width: 100vw;
@@ -1110,10 +1119,6 @@ a:link {
 	/*float: right;*/
 }
 
-
-
-
-
 #skills_img img {
 	position: relative;
 	/*float: left;*/
@@ -1130,7 +1135,7 @@ a:link {
 
 .fixed {
     position: fixed; 
-	top: 12em;
+	top: 20%;
 	width: 100%;
     height: 35em;
     left: 0;
@@ -1141,7 +1146,7 @@ a:link {
 	top: 7em;
 	width: 50em;
 	height: auto;
-	left: 55%;
+	left: 54.5%;
 	margin-left: -28.75em;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -1178,6 +1183,11 @@ a:link {
 	background-image: url('/Portfolio/img/wood_texture_blur.jpg');
 }
 
+
+#visit {
+	position: absolute;
+	top: 160em;
+}
 
 .visit {
 	position: relative;

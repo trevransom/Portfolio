@@ -180,15 +180,30 @@ body {
 	right: 3em;
 }
 
-#center {
+#top {
 	position: absolute;
-	border: 1px solid black;
-	padding: 5em;
-	width: 30%;
+	top: 0;
+}
+
+#center {
+	position: static;
+	padding: 2em;
+	width: 10.5em;
 	text-align: center;
-	left: 30%;
+	margin: 18em auto 0;
 	top: 25%;
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,9);
+	-webkit-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+}
+
+#center div {
+	font-family: Dense;
+	font-size: 8em;
+	font-weight: 900;
+	color: rgba(21,177,237, .9);
+	border: 4px double white;
 }
 
 #check {	
@@ -354,7 +369,7 @@ body {
 }
 
 .photo.large {
-  width: 90%;
+  width: 97%;
   z-index: 3;
 }
 
@@ -537,13 +552,13 @@ body {
 	letter-spacing: .25em;
 	width: 200px;
 	/*text-align: center;*/
-	left: 32%;
+	left: 30%;
 	/*float: center;*/
 }
 
 #stream_album .sound_title {
 	position: relative;
-	left: 50%;
+	left: 46%;
 }
 
 .sounds {
@@ -593,14 +608,15 @@ body {
 }
 
 .sounds_album_cover_title {
-	position: relative;
+	position: static;
 	font-family: sans-serif;
 	color: black;
 	letter-spacing: .45em;
 	z-index: 3;
-	width: 120px;
+	width: 178px;
 	top: 3em;
-	left: 33%;
+	margin: 3em auto -3em;
+	/*left: 24%;*/
 }
 
 #stream_album {
@@ -700,6 +716,7 @@ body {
 	float: left;
 	position: relative;
 }
+
 #title_submit_form {
 	border-style: none;
 	position: relative;

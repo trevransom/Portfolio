@@ -180,14 +180,27 @@ body {
 }
 
 #center {
-	position: absolute;
-	border: 1px solid black;
-	padding: 5em;
-	width: 30%;
+	position: static;
+	padding: 2em;
+	width: 10.5em;
 	text-align: center;
-	left: 30%;
-	top: 25%;
-	background-color: rgba(0,0,0,.2);
+	/*left: 36%;*/
+	/*margin-left: -3em;*/
+	margin: 18em auto 0;
+	/*top: 25%;*/
+	background-color: rgba(0,0,0,9);
+	-webkit-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 53px -3px rgba(0,0,0,0.75);
+	/*background: rgba(0,177,237, .6);*/
+}
+
+#center div {
+	font-family: Dense;
+	font-size: 8em;
+	font-weight: 900;
+	color: rgba(21,177,237, .9);
+	border: 4px double white;
 }
 
 #check {	
@@ -560,7 +573,7 @@ body {
 	padding-bottom: 2em;
 	color: black;
 	letter-spacing: .25em;
-	width: 200px;
+	width: 190px;
 	/*text-align: center;*/
 	left: 32%;
 	/*float: center;*/
@@ -618,14 +631,15 @@ body {
 }
 
 .sounds_album_cover_title {
-	position: relative;
+	position: static;
 	font-family: sans-serif;
 	color: black;
 	letter-spacing: .45em;
 	z-index: 3;
-	width: 120px;
+	width: 178px;
 	top: 3em;
-	left: 35%;
+	margin: 3em auto -3em;
+	/*left: 24%;*/
 }
 
 #stream_album {
@@ -741,18 +755,17 @@ body {
 
 .contact_position {
 	display: none;
-	position: absolute;
+	position: static;
+	margin: 0 auto;
 	background-color: rgba(255, 255, 255, .5);
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .contact_position > div {
 	position: absolute;
-	left: 20%;
-	margin-left: -1.5em;
+	left: 25%;
+	margin-left: -2.5em;
 	top: 7em;
 	padding-left: 1em;
 }
@@ -933,12 +946,12 @@ body {
 }
 
 .skills_img_solo {
-	position: relative;
+	position: static;
 	top: 9em;
-	min-width: 50em;
-	width: 200%;
-	left: 2%;
-	margin-left: -14em;
+	min-width: 45em;
+	width: 190%;
+	left: 0;
+	margin: 9em 0 0 -11.9em;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	opacity: .95;

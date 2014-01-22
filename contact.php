@@ -18,9 +18,11 @@ include "header.php";
 			</div>
 		</div>
 
-		<!-- <div id="contact_email_background">
+		<div id="contact_email_background">
 			<a href="https://twitter.com/trevransom" target="_blank"><div id="twitter"><i class="fa fa-twitter-square fa-3x"></i></div></a>
-		</div> -->
+			<a href="https://facebook.com/trev.ransom" target="_blank"><div id="twitter"><i class="fa fa-facebook-square fa-3x"></i></div></a>
+			<a href="http://www.linkedin.com/profile/view?id=145070677&trk=nav_responsive_tab_profile" target="_blank"><div id="twitter"><i class="fa fa-linkedin-square fa-3x"></i></div></a>
+		</div>
 	</body>
 
 	
